@@ -15,23 +15,19 @@ h_i_rec <- EVS_2017 %>%
                           to=c(NA,NA,NA,NA,1,2,3)))
 
 
-
-
-
-
-
-
-
-
-
-#Plot
-
-h_i_rec %>%
+he_in_df %>%
   drop_na() %>% 
-  ggplot(., aes(x = v261_r, y = v8)) +
+  ggplot(., aes(x = income, y = health)) +
   geom_smooth(method = "lm") +
   ylab("Health")+
-  scale_y_binned(breaks = seq(1,5, by = 1))+
-  scale_x_continuous(breaks = seq(1,3, by = 1))+
   xlab("Income")+
+  scale_y_binned(breaks = seq(1,5, by = 1), labels=c("Very Poor", "Poor","Fair", "Good", "Very Good"))+
+  scale_x_continuous(breaks = 1:3,  labels=c("Low Income", "Medium Income","High Income"))+
   theme_bw()
+
+
+
+
+
+
+
