@@ -23,26 +23,22 @@ ggplot(h_i_rec, aes(x = health)) +
   theme_bw()
 
 #Histogram w/ names INCOME
-ggplot(h_i_rec, aes(x = income)) +
+ggplot(h_i_rec, aes(x = v261_r)) +
   geom_histogram(alpha = 1, col = "blue", fill = "light blue",  binwidth = 1) +
   xlab("Income") +
   ylab("Number of people") +
   scale_x_continuous(breaks = 1:3,  labels=c("Low Income", "Medium Income","High Income"))+
   coord_cartesian(ylim = c(16000, 18000))+
-  scale_y_continuous(count(pct(income)))+
+  scale_y_continuous(labels = scales::percent)+
   theme_bw()
 
-
-
-
-
-
-ggplot(data = h_i_rec, aes(x = income), na.rm = TRUE) +
-  geom_bar() +
-  scale_x_continuous(breaks = 1:3,  labels=c("Low Income", "Medium Income","High Income"))+
-  ylim(0,100) +
+#THE GOOD ONE!!!
+ggplot(he_in_df, aes(x = income)) +
+  geom_histogram(alpha = 1, col = "blue", fill = "light blue",  binwidth = 1) +
   xlab("Income") +
-  ylab("Number of people")  +
-  scale_y_continuous(labels = scales::percent)
+  ylab("Number of people") +
+  scale_x_continuous(breaks = 1:3,  labels=c("Low Income", "Medium Income","High Income"))+
+  coord_cartesian(ylim = c(16000, 18000))+
+  theme_bw()
 
 
