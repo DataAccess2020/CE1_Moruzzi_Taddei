@@ -14,3 +14,10 @@ h_i_rec %>%
   xlab("Income")+
   theme_bw()
 
+
+
+
+#README RD CON SPIEGAZIONE GITHUB
+
+#APRIE ALMENO 1 PULL REQUEST
+
