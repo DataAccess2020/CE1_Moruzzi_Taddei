@@ -13,16 +13,36 @@ h_i_rec <- EVS_2017 %>%
   mutate(v261_r=mapvalues(v261_r, from=c(-10,-5,-2,-1,1,2,3),
                           to=c(NA,NA,NA,NA,1,2,3)))
 
+#h_i_rec %>%
+#  drop_na() %>% 
+#  ggplot(., aes(x = v261_r, y = v8)) +
+#  geom_smooth(method = "lm") +
+#  ylab("Health") +
+#  xlab("Income")+
+#  scale_y_discrete(breaks = seq(1,5, by = 1))+
+#                     theme_bw()
+
+#scale_x_discrete(breaks = seq(1,3, by = 1))
+#scale_y_discrete(breaks = seq(1,5, by = 1))
+
+#h_i_rec %>%
+#  drop_na() %>% 
+#  ggplot(., aes(x = v261_r, y = v8)) +
+#  geom_smooth(method = "lm") +
+#  ylab("Health") +
+#  xlab("Income")+
+#  scale_y_discrete(breaks = seq(1,5, by = 1))+
+#  theme_bw()
+
 h_i_rec %>%
   drop_na() %>% 
   ggplot(., aes(x = v261_r, y = v8)) +
   geom_smooth(method = "lm") +
-  ylab("Health") +
+  ylab("Health")+
+  scale_y_binned(breaks = seq(1,5, by = 1))+
+  scale_x_continuous(breaks = seq(1,3, by = 1))+
   xlab("Income")+
-  scale_y_discrete(breaks = seq(1,5, by = 1))
-theme_bw()
-
-##scale_x_discrete(breaks = seq(1,3, by = 1))
+  theme_bw()
 
 
 
