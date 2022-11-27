@@ -1,4 +1,3 @@
-
 #EVS 2017
 
 library(rio)
@@ -7,6 +6,8 @@ EVS_2017 <- import ("C:\\Users\\chiar\\OneDrive\\Desktop\\DAPS&CO\\DATA_ACCESS\\
 
 library(tidyverse)
 library(plyr)
+
+options(scipen= 99)
 
 
 #RECODING VARIABLES V8 (HEALTH) AND V261_r (INCOME)
@@ -44,6 +45,16 @@ ggplot(he_in_df, aes(x = income)) +
 
 #REGRESSION STATISTICAL CALCULATIONS
 
+reg <- lm(health ~ income,
+          data = he_in_df)
+
+summary(reg)
+
+# intercept = 3.2067
+# coefficient = 0.2568
+# adjusted R-squared = 0.0494
+# *** level of significance
+
 #REGRESSION PLOT
 he_in_df %>%
   drop_na() %>% 
@@ -54,6 +65,8 @@ he_in_df %>%
   scale_y_binned(breaks = seq(1,5, by = 1), labels=c("Very Poor", "Poor","Fair", "Good", "Very Good"))+
   scale_x_continuous(breaks = 1:3,  labels=c("Low Income", "Medium Income","High Income"))+
   theme_bw()
+
+
 
 
 

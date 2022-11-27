@@ -62,8 +62,6 @@
 # is also somewhat dependent on available finances
 #
 #
-#
-#
 
 
 
@@ -96,7 +94,6 @@
 # and reinforcing, in that societies burdened with diseases, suffering from 
 # endemic diseases, and with lower life expectancies tend to experience low 
 # productivity and low and unstable economic growth.
-
 
 
 
