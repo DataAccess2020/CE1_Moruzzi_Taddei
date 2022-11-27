@@ -12,7 +12,7 @@ Our project's main structure is as follows:
 - data_proc: it contains our processed datasets
 - junk: it contains our ideas and files that we chose not to use
 - notes: contains personal notes and notes about literature references
-- report: contains the final report in Rmarkdown
+- output: contains the final report in Rmarkdown
 
 ## Work Insights
 - Number of commits: 1

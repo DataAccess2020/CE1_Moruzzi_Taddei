@@ -9,7 +9,6 @@ library(plyr)
 
 options(scipen= 99)
 
-
 #RECODING VARIABLES V8 (HEALTH) AND V261_r (INCOME)
 h_i_rec <- EVS_2017 %>%
   mutate(v8=mapvalues(v8, from=c(-1,-2,-10,1,2,3,4,5),
@@ -43,7 +42,7 @@ ggplot(he_in_df, aes(x = income)) +
   coord_cartesian(ylim = c(16000, 18000))+
   theme_bw()
 
-#REGRESSION STATISTICAL CALCULATIONS
+#REGRESSION
 
 reg <- lm(health ~ income,
           data = he_in_df)

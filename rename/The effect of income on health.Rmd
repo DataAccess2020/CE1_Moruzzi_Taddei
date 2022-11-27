@@ -1,0 +1,76 @@
+---
+title: "The effect of income on health"
+author: "Chiara Moruzzi, Federico Taddei"
+date: "2022-11-27"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+Our research's aim is to investigate the impact of income (at an individual level) on selfperceived health status.
+Our hypothesis is that an increase of income level, corresponds a better health status on the individual. 
+
+**M. Marmot** in his paper *The influence of income on health: views of an epidemiologist*, there are two main ways in wich income affects health: a direct effect of income on everyday life (from a material point of view) and an indirect effect on social partecipation an life opportunities. 
+
+About material conditions, as **Fosu and Kwai's** research shows (*Growth, inequality, and poverty reduction in developing countries: Recent global evidence.*), below a certain poverty treshold the direct effect occours the most, above this line the effect is still present, but with a weaker impact.
+
+In regard of indirect effect of income on health, **Forchuk, Cheryl, Dickins and Corring**, in *Social determinants of health: housing and income.*, point out that we shouldn't consider health only as a physical condition, but also its pshycological aspect. Therefore social inclusion is a crucial aspect of individual health (objectively and subjectlively).
+
+## Methods
+
+For our research we used data from the European Values Study (round 2017, for further informations see <https://europeanvaluesstudy.eu/methodology-data-documentation/survey-2017/full-release-evs2017/>). 
+
+The variable we chose are the following two:
+
+- `v8` (renamed `health`) which measures self perceived health, divided in five subcategories: *"Very Poor", "Poor","Fair", "Good", "Very Good"* .
+
+-  `v261_r`(renamed `income`)  which measures income level, divided in three subcategories: *"Low Income", "Medium Income","High Income"*.
+
+To see how the two variables are distibuted in our data we made to simple histograms of their distribution:
+
+![](C:/Users/39333/Desktop/UNIVERSITA/MAGISTRALE COM-DAPS&CO/CORSI/DATA ACCESS AND REGULATIONS/CLASS EXCERCISE/CE1_Moruzzi_Taddei/plots/Hist_health_jpeg.jpeg)
+
+![Source: https:/github.com/DataAccess2020/CE1_Moruzzi_Taddei/blob/main/plots/](https://raw.githubusercontent.com/DataAccess2020/CE1_Moruzzi_Taddei/main/plots/Hist_health_jpeg.jpeg)
+
+
+```{r cars}
+summary(cars)
+```
+
+
+
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Bibliography
+
+- Marmot, Michael. "The influence of income on health: views of an epidemiologist." Health affairs 21.2 (2002): 31-46.
+
+- Forchuk, Cheryl, Kevin Dickins, and Deborah J. Corring. "Social determinants of health: housing and income." Healthc Q 18.Suppl (2016): 27-31.
+
+- Fosu, Augustin Kwasi. "Growth, inequality, and poverty reduction in developing countries: Recent global evidence." Research in Economics 71.2 (2017): 306-336.
+
+
+
+
+

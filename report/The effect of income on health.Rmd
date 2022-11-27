@@ -67,7 +67,7 @@ Here it is a graphical vizualization of the correlation between `health` and `in
 
 As the results show, we can see that there is a positive correlation between income and health, therefore we can corroborate our research hypothesis. However, as the R^2^ value shows (0.0494), the model's goodness of fit is small, since we did not include in the regression more variables, which could affect the correlation (such as gender, education, geographical area and social inequity at a macroscopic level).
 
-Future researches could delve into this topic's aspects and report a better model to explain and explore the connection between these two variables.
+Future researches could delve into these aspects and report a better model to explain and explore the connection between these two variables.
 
 ## Bibliography
 
