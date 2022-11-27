@@ -64,78 +64,99 @@
 #
 #
 #
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
+
+
+
+
+
+# DOI: 10.1146/annurev.publhealth.23.100901.140540
+# THE MACROECONOMIC DETERMINANTS OF HEALTH
+
+
+#The possibility has therefore been raised that the ecological relationship 
+# between income inequality and poor health is not universal, but rather depends 
+# on the social policies that governments deploy to mitigate the effects of 
+# economic inequalities
+
+
+# At present, three separate, though not mutually exclusive, mechanisms have 
+# been put forward.
+# The first is through reduced access to life opportunities, material resources, 
+# and opportunity structures. The second set of processes is linked to decreasing 
+# social capital that manifests through factors such as erosion of social cohesion, 
+# increased social exclusion, and conflict. Third, more direct psychosocial 
+# pathways such as hopelessness, lack of control, or loss of respect arising as 
+# a consequence of inequality have been identified as having a potential effect 
+# on individual health
+
+
+# The evidence is now overwhelming that poverty (whether conceptualized at the
+# country level or at the individual level) is strongly correlated with poorer 
+# health outcomes, on average. Moreover, the relationship is likely reciprocal 
+# and reinforcing, in that societies burdened with diseases, suffering from 
+# endemic diseases, and with lower life expectancies tend to experience low 
+# productivity and low and unstable economic growth.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
