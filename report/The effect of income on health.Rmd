@@ -22,7 +22,7 @@ In regard of indirect effect of income on health, **Forchuk, Cheryl, Dickins and
 
 ## Methods
 
-For our research we used data from the European Values Study (round 2017, for further informations see <https://europeanvaluesstudy.eu/methodology-data-documentation/survey-2017/full-release-evs2017/>). 
+For our research we used data from the European Values Study (round 2017, for further informations see <https://europeanvaluesstudy.eu/methodology-data-documentation/survey-2017/full-release-evs2017/>. 
 
 The variable we chose are the following two:
 
@@ -32,35 +32,42 @@ The variable we chose are the following two:
 
 To see how the two variables are distibuted in our data we made to simple histograms of their distribution:
 
-![](C:/Users/39333/Desktop/UNIVERSITA/MAGISTRALE COM-DAPS&CO/CORSI/DATA ACCESS AND REGULATIONS/CLASS EXCERCISE/CE1_Moruzzi_Taddei/plots/Hist_health_jpeg.jpeg)
+![](https://github.com/DataAccess2020/CE1_Moruzzi_Taddei/blob/main/plots/Hist_health_jpeg.jpeg?raw=true)
+![Source:https://github.com/DataAccess2020/CE1_Moruzzi_Taddei/blob/main/plots/Hist_income_jpeg.jpeg](https://github.com/DataAccess2020/CE1_Moruzzi_Taddei/blob/main/plots/Hist_income_jpeg.jpeg?raw=true)
 
-![Source: https:/github.com/DataAccess2020/CE1_Moruzzi_Taddei/blob/main/plots/](https://raw.githubusercontent.com/DataAccess2020/CE1_Moruzzi_Taddei/main/plots/Hist_health_jpeg.jpeg)
+## Results
 
+To investigate the relationship between income and health we used a linear regression model. The results show that there is a weak, but positive correlation between the two variables (without a specific focus on individual belows poverty treshold). The beta-coefficient is equal to 0.2568 which indicates an increas in health status as the income grows. The adjusted R^2^ is equal to 0.0494, beside this small value, we found a strong statistical significance in the relatioship.
 
-```{r cars}
-summary(cars)
+```{r, message = F, echo = F}
+library(tidyverse)
+library(dplyr)
+library(plyr)
+library(knitr)
+library(haven)
+EVS_2017 <- read_stata("C:/Users/39333/Desktop/UNIVERSITA/MAGISTRALE COM-DAPS&CO/CORSI/DATA ACCESS AND REGULATIONS/CLASS EXCERCISE/CE1_Moruzzi_Taddei/data_orig/ZA7500_v5-0-0.dta")
+h_i_rec <- EVS_2017 %>%
+  mutate(v8=mapvalues(v8, from=c(-1,-2,-10,1,2,3,4,5),
+                      to=c(NA,NA,NA,5,4,3,2,1)))%>%
+  mutate(v261_r=mapvalues(v261_r, from=c(-10,-5,-2,-1,1,2,3),
+                          to=c(NA,NA,NA,NA,1,2,3)))
+health <- h_i_rec$v8
+income <- h_i_rec$v261_r
+he_in_df <- data.frame(health, income)
+reg <- lm(health ~ income,
+          data = he_in_df)
+summary(reg)
 ```
 
+Here it is a graphical model to visualize the correlation between `health` and `income`, through linear regression.
 
+![](https://github.com/DataAccess2020/CE1_Moruzzi_Taddei/blob/main/plots/Regression_plot_jpeg.jpeg?raw=true)
 
+## Conclusion
 
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
+As the results show, we can see that there is a positive correlation between income and health, therefore we can corroborate our research hypothesis. However, as the R^2^ value shows (0.0494), the model's goodness of fit is small, since we did not include in the regression more variables, which could affect the correlation (such as gender, education, geographical area and social inequity at a macroscopic level).
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
-
-
-
-
-
-
-
-
-
-
-
-
+Future researches could delve into this topic's aspects.
 
 ## Bibliography
 
