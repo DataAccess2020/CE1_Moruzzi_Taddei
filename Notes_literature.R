@@ -41,12 +41,25 @@
 # of where a person is in the social hierarchy, rather than because of pounds, 
 # dollars, or euros in the pocket
 #
+
+
+
+
+
+#https://www.furniturebank.org/wp-content/uploads/2016_Social-Determinants-of-Health-Housing-and-Income.pdf
 #
-#
-#
-#
-#
-#
+# When speaking of health, it's important to point out that there are many dimension
+# of this concept apart from the general one. For example, mental health is a big
+# part of what can be considered as "general health". Considering this assumption makes it 
+# easier to understand why social inclusion and participation is an important
+# element for health.
+
+
+# Having a stable income, either from employment or through financial support 
+# and benefits, is directly related to other determinants of health, namely
+# affordable housing andrent, food and transportation to access healthcare
+# Social inclusion, or the ability to engage fully in the community,
+# is also somewhat dependent on available finances
 #
 #
 #
