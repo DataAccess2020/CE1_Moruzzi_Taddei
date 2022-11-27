@@ -4,6 +4,7 @@ Chiara Moruzzi and Federico Taddei's Class Exercise 1
 Our small elaborate want to show if there is an impact of income on the health condition.
 In order to do it, we chose the European Values Study from 2017 round.
 
+## Structure
 Our project's main structure is as follows:
 - scripts: it contains our R scripts (divided by topic)
 - plots: it contains our plots for data visualization (saved as images)
@@ -13,5 +14,6 @@ Our project's main structure is as follows:
 - notes: contains personal notes and notes about literature references
 - report: contains the final report in Rmarkdown
 
+## Work Insights
 During our project we have done:
 ***
