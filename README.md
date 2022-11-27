@@ -10,6 +10,7 @@ Our project's main structure is as follows:
 - data_orig: it contains our original dataset from EVS
 - data_proc: it contains our processed datasets
 - junk: it contains our ideas and files that we chose not to use
+- notes: contains personal notes and notes about literature references
 
 During our project we have done:
 ***
