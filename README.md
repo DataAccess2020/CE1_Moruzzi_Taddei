@@ -15,5 +15,15 @@ Our project's main structure is as follows:
 - report: contains the final report in Rmarkdown
 
 ## Work Insights
-During our project we have done:
-***
+- Number of commits: 1
+  - Chiara Moruzzi: 17
+  - Federico Taddei: 15
+  
+- Number of issues opened: 3
+
+- Number of pull requests open: 2
+
+- Number of pull requests accepted and merged: 2
+
+- Number of new branches opened: 2
+
