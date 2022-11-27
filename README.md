@@ -1,8 +1,8 @@
 # CE1_Moruzzi_Taddei
 Chiara Moruzzi and Federico Taddei's Class Exercise 1
 
-Our small elaborate want to show if there is an impact of income on the health condition.
-In order to do it, we chose the European Values Study from 2017 round.
+Our small elaborate wants to show if there is an impact of income on individual health condition.
+In order to do it, we chose to use data from the European Values Study (2017 round).
 
 ## Structure
 Our project's main structure is as follows:
@@ -15,8 +15,8 @@ Our project's main structure is as follows:
 - output: contains the final report in Rmarkdown
 
 ## Work Insights
-- Number of commits: 1
-  - Chiara Moruzzi: 17
+- Number of commits:
+  - Chiara Moruzzi: 21
   - Federico Taddei: 15
   
 - Number of issues opened: 3
