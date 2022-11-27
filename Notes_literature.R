@@ -25,15 +25,21 @@
 # correlated with health, not through material conditions, but rather through 
 # social participation
 #
+# the author suggests that if we compare rich countries and poor countries the results
+# might change a little also due to the intercation of the education factor
 #
+# moreover, income many times determines the ability to participate in the way defined
+# as acceptable by society
 #
+# The higher the income, the more likely people are to report themselves in 
+# good health and the less likely to report depression. Income is only one measure 
+# of social position: In Whitehall II the most powerful predictor has always been 
+# position in the occupational hierarchy
 #
-#
-#
-#
-#
-#
-#
+# A tentative conclusion is that in a population above the poverty level, 
+# income is important as a predictor of ill health because it is a measure 
+# of where a person is in the social hierarchy, rather than because of pounds, 
+# dollars, or euros in the pocket
 #
 #
 #
