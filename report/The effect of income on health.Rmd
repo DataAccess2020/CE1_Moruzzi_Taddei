@@ -11,14 +11,14 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Introduction
 
-Our research's aim is to investigate the impact of income (at an individual level) on selfperceived health status.
-Our hypothesis is that an increase of income level, corresponds a better health status on the individual. 
+Our research's aim is to investigate the impact of income (at an individual level) on self-perceived health status.
+Our hypothesis is that an increase of income level corresponds to a better individual health status. 
 
-**M. Marmot** in his paper *The influence of income on health: views of an epidemiologist*, there are two main ways in wich income affects health: a direct effect of income on everyday life (from a material point of view) and an indirect effect on social partecipation an life opportunities. 
+**M. Marmot** in his paper *The influence of income on health: views of an epidemiologist*, there are two main ways in which income affects health: a direct effect of income on everyday life (from a material point of view) and an indirect effect on social participation and life opportunities. 
 
-About material conditions, as **Fosu and Kwai's** research shows (*Growth, inequality, and poverty reduction in developing countries: Recent global evidence.*), below a certain poverty treshold the direct effect occours the most, above this line the effect is still present, but with a weaker impact.
+About material conditions, as **Fosu and Kwasi's** research shows (*Growth, inequality, and poverty reduction in developing countries: Recent global evidence.*), below a certain poverty threshold the direct effect occurs the most, above this line the effect is still present, but with a weaker impact.
 
-In regard of indirect effect of income on health, **Forchuk, Cheryl, Dickins and Corring**, in *Social determinants of health: housing and income.*, point out that we shouldn't consider health only as a physical condition, but also its pshycological aspect. Therefore social inclusion is a crucial aspect of individual health (objectively and subjectlively).
+In regard of indirect effect of income on health, **Forchuk, Cheryl, Dickins and Corring**, in *Social determinants of health: housing and income.*, point out that we shouldn't consider health only as a physical condition, but also its pshycological aspect. Therefore social inclusion becomes a crucial aspect of individual health (bpth objectively and subjectively).
 
 ## Methods
 
@@ -30,16 +30,15 @@ The variable we chose are the following two:
 
 -  `v261_r`(renamed `income`)  which measures income level, divided in three subcategories: *"Low Income", "Medium Income","High Income"*.
 
-To see how the two variables are distibuted in our data we made to simple histograms of their distribution:
+To see how the two variables are distributed among the respondent we made two simple histograms of their distribution in the sample:
 
 ![](https://github.com/DataAccess2020/CE1_Moruzzi_Taddei/blob/main/plots/Hist_health_jpeg.jpeg?raw=true)
 ![Source:https://github.com/DataAccess2020/CE1_Moruzzi_Taddei/blob/main/plots/Hist_income_jpeg.jpeg](https://github.com/DataAccess2020/CE1_Moruzzi_Taddei/blob/main/plots/Hist_income_jpeg.jpeg?raw=true)
 
 ## Results
 
-To investigate the relationship between income and health we used a linear regression model. The results show that there is a weak, but positive correlation between the two variables (without a specific focus on individual belows poverty treshold). The beta-coefficient is equal to 0.2568 which indicates an increas in health status as the income grows. The adjusted R^2^ is equal to 0.0494, beside this small value, we found a strong statistical significance in the relatioship.
-
-```{r, message = FALSE, warning = FALSE, echo = FALSE}
+To investigate the relationship between income and health we used a linear regression model. The results show that there is a weak, but positive correlation between the two variables. Since we did not focus on people below poverty threshold, this is consistent with what is stated in Fosu and Kwasi's study and with our research hypothesis. The beta-coefficient is equal to 0.2568 which indicates an increase in health status as the income grows; the coefficient is strongly significant (***). The adjusted R^2^ is equal to 0.0494; beside this small value in the goodness of fit of the model, we found a strong statistical significance in the relationship.
+```{r, message = F, warning = F, echo = F}
 library(tidyverse)
 library(dplyr)
 library(plyr)
@@ -58,26 +57,16 @@ reg <- lm(health ~ income,
           data = he_in_df)
 summary(reg)
 ```
-
-Here it is a graphical model to visualize the correlation between `health` and `income`, through linear regression.
-
+Here it is a graphical vizualization of the correlation between `health` and `income` through linear regression.
 ![](https://github.com/DataAccess2020/CE1_Moruzzi_Taddei/blob/main/plots/Regression_plot_jpeg.jpeg?raw=true)
 
 ## Conclusion
 
 As the results show, we can see that there is a positive correlation between income and health, therefore we can corroborate our research hypothesis. However, as the R^2^ value shows (0.0494), the model's goodness of fit is small, since we did not include in the regression more variables, which could affect the correlation (such as gender, education, geographical area and social inequity at a macroscopic level).
+Future researches could delve into these aspects and report a better model to explain and explore the connection between these two variables.
 
-Future researches could delve into this topic's aspects.
 
 ## Bibliography
-
 - Marmot, Michael. "The influence of income on health: views of an epidemiologist." Health affairs 21.2 (2002): 31-46.
-
 - Forchuk, Cheryl, Kevin Dickins, and Deborah J. Corring. "Social determinants of health: housing and income." Healthc Q 18.Suppl (2016): 27-31.
-
 - Fosu, Augustin Kwasi. "Growth, inequality, and poverty reduction in developing countries: Recent global evidence." Research in Economics 71.2 (2017): 306-336.
-
-
-
-
-
