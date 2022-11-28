@@ -17,7 +17,7 @@ Our project's main structure is as follows:
 ## Work Insights
 - Number of commits:
   - Chiara Moruzzi: 21
-  - Federico Taddei: 15
+  - Federico Taddei: 18
   
 - Number of issues opened: 3
 
