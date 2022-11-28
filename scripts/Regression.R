@@ -5,7 +5,11 @@ reg <- lm(health ~ income,
 
 summary(reg)
 
+
 # intercept = 3.2067
 # coefficient = 0.2568
 # adjusted R-squared = 0.0494
 # *** level of significance
+
+regsum=summary(reg)
+print(regsum)
